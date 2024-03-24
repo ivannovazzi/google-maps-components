@@ -1,0 +1,49 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]  
+
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Cache node modules
+      uses: actions/cache@v4
+      env:
+        cache-name: cache-node-modules
+      with:
+        path: '**/node_modules'
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
+
+    - run: yarn install --frozen-lockfile
+    - run: yarn build
+
+    - name: Cache Build
+      id: cache-build
+      uses: actions/cache@v4
+      with:
+        path: ./build
+        key: ${{ runner.os }}-build-${{ github.run_id }}
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+      
+        
+  
+  

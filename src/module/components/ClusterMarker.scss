@@ -1,0 +1,21 @@
+.cluster-marker {
+  opacity: 0;
+  animation: fade-in-marker 0.4s ease-out forwards;
+  transform: scale(0.7);
+
+  &:hover {
+    transform: scale(2);
+    color: white;
+  }
+}
+
+@keyframes fade-in-marker {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
