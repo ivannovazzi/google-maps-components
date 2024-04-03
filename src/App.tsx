@@ -1,7 +1,7 @@
 import { Map } from "@vis.gl/react-google-maps";
 import { ReactComponent as TestSvg } from "./assets/test.svg";
 import { useState } from "react";
-import { Clusterer, IconMarker, ClusterMarker } from "./module/components";
+import { Clusterer, IconMarker, ClusterMarker, InfoBox, DirectionsRenderer, TrafficLayer } from "./module/components";
 import {
   useMarkerRefs,
   useBounds,
@@ -12,8 +12,6 @@ import { DataPoint } from "./data";
 import directions from "./directions";
 import { getLatLngPosition } from "./module/utils";
 import { Clusterable } from "./module/types";
-import InfoBox from "./module/components/InfoBox";
-import DirectionsRenderer from "./module/components/DirectionsRenderer";
 
 interface AppProps {
   vehicles: Clusterable<DataPoint>[];
@@ -40,6 +38,8 @@ export default function App({ vehicles }: AppProps) {
       {directions.map((direction: any, i: any) => (
         <DirectionsRenderer directions={direction} key={i}/>
       ))}
+
+      <TrafficLayer />
       
       <Clusterer
         items={vehicles}
