@@ -45,7 +45,7 @@ export default function App({ vehicles }: AppProps) {
         items={vehicles}
         zoom={zoom}
         bounds={bounds}
-        config={{ radius: 60, maxZoom: 20 }}
+        config={{ radius: 200, maxZoom: 16 }}
         renderMarker={(props) => (
           <IconMarker
             ref={(marker) => setMarker(marker, props.item._key)}

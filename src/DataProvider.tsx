@@ -3,10 +3,13 @@ import makeData from "./data";
 import App from "./App";
 import useClusterable from "./module/hooks/useClusterable";
 import useRotation from "./module/hooks/useRotation";
+import test from "./test";
 
 const data = makeData(1000);
+setTimeout(() => test(), 1)
 
 export default function Data() {
+  
   const vehicles = useClusterable(data, (p) => p.id, (p) => ({ lat: p.lat, lng: p.lng }))
   
   const changingVehicles = useFakeMovements(vehicles, {

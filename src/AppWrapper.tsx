@@ -1,6 +1,14 @@
 import { useCallback, useState } from "react";
 import DataProvider from "./DataProvider";
-import { APIProvider } from "@vis.gl/react-google-maps";
+import { APIProvider, useApiIsLoaded } from "@vis.gl/react-google-maps";
+
+function Loader({ children }: { children: React.ReactNode }) {
+  const apiIsLoaded = useApiIsLoaded();
+  if (!apiIsLoaded) {
+    return <div>Loading...</div>;
+  }
+  return <>{children}</>;
+}
 
 export default function AppWrapper() {
   const params = new URLSearchParams(window.location.search);
@@ -15,7 +23,6 @@ export default function AppWrapper() {
     },
     []
   );
-
   return (
     <div className="app-wrapper">
       <div>
@@ -28,7 +35,9 @@ export default function AppWrapper() {
       </div>
       {apiKey && (
         <APIProvider apiKey={apiKey}>
-          <DataProvider />
+          <Loader>
+            <DataProvider />
+          </Loader>
         </APIProvider>
       )}
     </div>
