@@ -1269,12 +1269,12 @@
   resolved "https://registry.yarnpkg.com/@csstools/selector-specificity/-/selector-specificity-2.2.0.tgz#2cbcf822bf3764c9658c4d2e568bd0c0cb748016"
   integrity sha512-+OJ9konv95ClSTOJCmMZqpd5+YGsB2S+x6w3E1oaM8UuR5j8nTNHYSz8c9BEPGDOCMQYIEEGlVPj/VY64iTbGw==
 
-"@deck.gl/google-maps@^9.0.14":
-  version "9.0.14"
-  resolved "https://registry.yarnpkg.com/@deck.gl/google-maps/-/google-maps-9.0.14.tgz#981e43f6d235c4e82b376b1dc93335e4ded414b0"
-  integrity sha512-6k4zUQktHNaD1JvQO0KlkTKMRd7aEKOlaYSIbxnhq8vrJp3lSaIXdpppmbB/Z++p6U6xbcNFT/oMdKVnY4SwSw==
+"@deck.gl/google-maps@^9.0.16":
+  version "9.0.16"
+  resolved "https://registry.yarnpkg.com/@deck.gl/google-maps/-/google-maps-9.0.16.tgz#b3353209d81ac6b16cf9ab4e454bd19950a6dcfb"
+  integrity sha512-Z+3zXGMMBAoSKzfbAT96GExKsaZlLh5pXK4enEqisqAAOVDMjQ9gvWrS1OZ3vQHOOc9sTZt3JtFF1t8o7wwhPg==
   dependencies:
-    "@luma.gl/constants" "^9.0.11"
+    "@luma.gl/constants" "^9.0.14"
     "@math.gl/core" "^4.0.0"
     "@types/google.maps" "^3.48.6"
 
@@ -1646,10 +1646,10 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
 
-"@luma.gl/constants@^9.0.11":
-  version "9.0.12"
-  resolved "https://registry.yarnpkg.com/@luma.gl/constants/-/constants-9.0.12.tgz#627aa743e809a0f21ed28e4fb3119c69d67e7207"
-  integrity sha512-/J6Z1uQDiEjp9t+5ijHE2wB+eegr2zBLhEnyMx8Fh4FUFELFdK9gaJVpv0u2xzZGyAhCy6GrgqOBVi0agxtF1g==
+"@luma.gl/constants@^9.0.14":
+  version "9.0.14"
+  resolved "https://registry.yarnpkg.com/@luma.gl/constants/-/constants-9.0.14.tgz#c9476b8da7f9f2eb3b26d96e7a2e3d0f27b77694"
+  integrity sha512-mCZ5Sr39EX8AjPVy3v5W/XamaU6dtA5CEHCYLPdyMXEQ2snqsFut2Y4cOO/ySuOUccjEm4Y6Vb45BJKNMN8NyQ==
 
 "@math.gl/core@^4.0.0":
   version "4.0.1"
@@ -1918,10 +1918,10 @@
     lodash "^4.17.21"
     redent "^3.0.0"
 
-"@testing-library/react@^15.0.6":
-  version "15.0.6"
-  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-15.0.6.tgz#76be2e9e6da98c044823dfbc9d62ad3f10a3a401"
-  integrity sha512-UlbazRtEpQClFOiYp+1BapMT+xyqWMnE+hh9tn5DQ6gmlE7AIZWcGpzZukmDZuFk3By01oiqOf8lRedLS4k6xQ==
+"@testing-library/react@^15.0.7":
+  version "15.0.7"
+  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-15.0.7.tgz#ff733ce0893c875cb5a47672e8e772897128f4ae"
+  integrity sha512-cg0RvEdD1TIhhkm1IeYMQxrzy0MtUNfa3minv4MjbgcYzJAZ7yD0i0lwoPOTPr+INtiXFezt2o8xMSnyHhEn2Q==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^10.0.0"
@@ -2156,10 +2156,10 @@
   dependencies:
     undici-types "~5.26.4"
 
-"@types/node@^20.12.8":
-  version "20.12.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.8.tgz#35897bf2bfe3469847ab04634636de09552e8256"
-  integrity sha512-NU0rJLJnshZWdE/097cdCBbyW1h4hEg0xpovcoAQYHl8dnEyp/NAOiE45pvc+Bd1Dt+2r94v2eGFpQJ4R7g+2w==
+"@types/node@^20.12.12":
+  version "20.12.12"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.12.tgz#7cbecdf902085cec634fdb362172dfe12b8f2050"
+  integrity sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==
   dependencies:
     undici-types "~5.26.4"
 
@@ -2216,10 +2216,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^18.3.1":
-  version "18.3.1"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.1.tgz#fed43985caa834a2084d002e4771e15dfcbdbe8e"
-  integrity sha512-V0kuGBX3+prX+DQ/7r2qsv1NsdfnCLnTgnRJ1pYnxykBhGMz+qj+box5lq7XsO5mtZsBqpjwwTu/7wszPfMBcw==
+"@types/react@^18.3.3":
+  version "18.3.3"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.3.tgz#9679020895318b0915d7a3ab004d92d33375c45f"
+  integrity sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==
   dependencies:
     "@types/prop-types" "*"
     csstype "^3.0.2"
@@ -2416,10 +2416,10 @@
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
-"@vis.gl/react-google-maps@^0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@vis.gl/react-google-maps/-/react-google-maps-0.10.0.tgz#63d29f67e6ba403cc54d0d35ce1f41943bb982cf"
-  integrity sha512-vAHCxcbzOcz/H/iwAMJXx9Yu3tLXdybAX4qhFnfTZ00OoYx1lLA0jmrzDY/nPIASBafofTNY7GT78GnrpbWTQg==
+"@vis.gl/react-google-maps@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vis.gl/react-google-maps/-/react-google-maps-1.0.0.tgz#03502b1263ea2a7e0d19328c382ae6b58566f40e"
+  integrity sha512-qkD2k8SIg5SrNJjM+FNOh0IITGLGCBULdALDOXGhVBq0hriv1GkTsoi7D0rs4fiYDQeKSqX8cmWgwGZcMTum1g==
   dependencies:
     "@types/google.maps" "^3.54.10"
     fast-deep-equal "^3.1.3"
@@ -8281,10 +8281,10 @@ sass-loader@^12.3.0:
     klona "^2.0.4"
     neo-async "^2.6.2"
 
-sass@^1.76.0:
-  version "1.76.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.76.0.tgz#fe15909500735ac154f0dc7386d656b62b03987d"
-  integrity sha512-nc3LeqvF2FNW5xGF1zxZifdW3ffIz5aBb7I7tSvOoNu7z1RQ6pFt9MBuiPtjgaI62YWrM/txjWlOCFiGtf2xpw==
+sass@^1.77.2:
+  version "1.77.2"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.77.2.tgz#18d4ed2eefc260cdc8099c5439ec1303fd5863aa"
+  integrity sha512-eb4GZt1C3avsX3heBNlrc7I09nyT00IUuo4eFhAbeXWU2fvA7oXI53SxODVAA+zgZCk9aunAZgO+losjR3fAwA==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
@@ -9374,10 +9374,10 @@ wbuf@^1.1.0, wbuf@^1.7.3:
   dependencies:
     minimalistic-assert "^1.0.0"
 
-web-vitals@^3.5.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-3.5.2.tgz#5bb58461bbc173c3f00c2ddff8bfe6e680999ca9"
-  integrity sha512-c0rhqNcHXRkY/ogGDJQxZ9Im9D19hDihbzSQJrsioex+KnFgmMzBiy57Z1EjkhX/+OjyBpclDCzz2ITtjokFmg==
+web-vitals@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/web-vitals/-/web-vitals-4.0.1.tgz#9fa4dfcd26130d6721717c5f2ff73adf3adbbe76"
+  integrity sha512-AW6qT/vXK3pbf+WgVcEBXY//AWCpXjVKgdb6rt0cARSUdtT+NUtZCOeo+CSLUX7PjSQ275DmxfkAs7QlPbtR6w==
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
