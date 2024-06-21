@@ -12,7 +12,6 @@ import { DataPoint } from "./data";
 import directions from "./directions";
 import { getLatLngPosition } from "./module/utils";
 import { Clusterable } from "./module/types";
-import style from "./nightStyle";
 
 interface AppProps {
   vehicles: Clusterable<DataPoint>[];
@@ -30,7 +29,6 @@ export default function App({ vehicles }: AppProps) {
     <Map
       mapId="DEMO_MAP_ID"
       defaultCenter={{ lat: 22.54992, lng: 0 }}
-      styles={style}
       defaultZoom={3}
       gestureHandling={"greedy"}
       disableDefaultUI={true}
